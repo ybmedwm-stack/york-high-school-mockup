@@ -7,19 +7,6 @@
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   root.classList.add('js');
 
-  /* Scroll reveal */
-  var targets = document.querySelectorAll('.fade-target');
-  if ('IntersectionObserver' in window && !reduce) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add('animate-in'); io.unobserve(e.target); }
-      });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-    targets.forEach(function (t) { io.observe(t); });
-  } else {
-    targets.forEach(function (t) { t.classList.add('animate-in'); });
-  }
-
   /* Hero rail drift: pointer and scroll parallax, two depths */
   var tiles = Array.prototype.slice.call(document.querySelectorAll('.rail .tile'));
   var hero = document.querySelector('.hero');

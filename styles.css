@@ -179,6 +179,16 @@ p { text-wrap: pretty; }
 .hero__lede { margin-top: 18px; max-width: 54ch; font-size: clamp(1rem, .95rem + .3vw, 1.15rem); color: var(--t-75); }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 
+/* Desktop hero: score on one line bleeding the frame, board left, rail right overlapping the score baseline */
+@media (min-width: 1025px) {
+  .hero__inner { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: clamp(24px, 3vw, 48px); align-items: start; }
+  .hero__score { grid-column: 1 / -1; flex-wrap: nowrap; white-space: nowrap; font-size: 15.4vw; line-height: .8; margin-bottom: 0; width: max-content; }
+  .hero__board { grid-column: 1; margin-top: 28px; }
+  .hero__title { font-size: clamp(1.8rem, 1rem + 2vw, 2.8rem); }
+  .hero__inner .rail { grid-column: 2; grid-template-columns: 1.25fr 1fr; margin-top: -3.6vw; position: relative; z-index: 2; }
+  .hero__inner .tile--lead .tile__art { min-height: 200px; }
+}
+
 /* Rail of tiles, the first viewport's working action */
 .rail {
   display: grid;
@@ -412,9 +422,7 @@ details p { padding: 0 4px 22px; color: var(--t-75); max-width: 62ch; }
 .alert small { color: var(--t-50); font-size: .78rem; }
 .footer__legal { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); font-size: .82rem; color: var(--t-50); }
 
-/* Scroll reveal: visible by default, gated by JS only when it runs */
-.js .fade-target { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease-out), transform .8s var(--ease-out); }
-.js .fade-target.animate-in { opacity: 1; transform: none; }
+/* Sections are visible by default. The page's authored motion is the hero rail drift and the stats count-up. */
 
 /* Responsive */
 @media (max-width: 1024px) {
@@ -442,11 +450,18 @@ details p { padding: 0 4px 22px; color: var(--t-75); max-width: 62ch; }
   .hero__score { font-size: clamp(4.6rem, 22vw, 7rem); }
   .rail { grid-template-columns: 1fr; gap: 12px; }
   .tile--lead { grid-column: span 1; }
-  .tile--lead .tile__link { flex-direction: column; }
-  .tile--lead .tile__art { flex: none; min-height: 0; aspect-ratio: 1 / .8; }
-  .tile:not(.tile--lead) .tile__link { flex-direction: row; align-items: center; }
-  .tile:not(.tile--lead) .tile__art { flex: 0 0 34%; aspect-ratio: 1; padding: 8%; }
-  .tile:not(.tile--lead) .tile__body { flex: 1; }
+  .hero { padding-top: 28px; }
+  .hero__lede { font-size: .95rem; margin-top: 12px; }
+  .hero__actions { margin-top: 18px; gap: 8px; }
+  .hero__actions .btn { padding: 11px 15px; font-size: .84rem; }
+  .rail { margin-top: 24px; }
+  .tile__link { flex-direction: row; align-items: center; }
+  .tile__art { flex: 0 0 36%; aspect-ratio: 1; padding: 7%; min-height: 0; }
+  .tile--lead .tile__art { flex: 0 0 40%; min-height: 0; }
+  .tile__body { flex: 1; padding: 14px 14px 14px 4px; }
+  .tile--lead .tile__name { font-size: 1.2rem; }
+  .tile--lead .tile__price { font-size: 1.45rem; }
+  .tile__badge { top: 10px; left: 10px; }
   .card, .card--tall { grid-column: span 12; }
   .card--wide { flex-direction: column; }
   .card__stack { flex: none; min-height: 240px; }
@@ -462,6 +477,5 @@ details p { padding: 0 4px 22px; color: var(--t-75); max-width: 62ch; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .ticker__track { animation: none; }
-  .js .fade-target { opacity: 1; transform: none; transition: none; }
   .tile, .card__stack svg, .card__art svg, .tile__art svg { transition: none !important; transform: none !important; }
 }
