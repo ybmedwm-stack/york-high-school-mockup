@@ -56,5 +56,31 @@ SpiritShop lets buyers add text and a back design to any item. Match it on items
 
 ## Filled back by Claude after loading
 
+Store: bayside-test (site 27710096). Design batches run: navy garments with the Columbia + white wordmark (14 products, screen print, 2 color), and headwear/polo/outerwear/shorts with the Columbia single-color wordmark as DTF (7 products). Deferred: the light-garment batch (Sport Grey, White, Light Blue variants with the navy + Columbia wordmark). Prices kept at DN default (0% markup over FC wholesale) because FC wholesale exceeded the manifest's retail guesses; Ray sets retail.
+
+DN category IDs on this store: T-Shirts 6372561, Sweatshirts 6372566, Youth 6372571, Athletics 6372576, Polos 6372581, Outerwear 6372586, Headwear 6372591.
+
 | # | DN product ID | Product URL | Mockup image URL | Status |
 |---|---|---|---|---|
+| 1 | 29013666 | https://bayside-test.secure-decoration.com/shop/product/29013666 | https://bayside-test.secure-decoration.com/cpimages_n/29013666 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 2 | 29013656 | https://bayside-test.secure-decoration.com/shop/product/29013656 | https://bayside-test.secure-decoration.com/cpimages_n/29013656 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 3 | 29013696 | https://bayside-test.secure-decoration.com/shop/product/29013696 | https://bayside-test.secure-decoration.com/cpimages_n/29013696 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 4 | 29013706 | https://bayside-test.secure-decoration.com/shop/product/29013706 | https://bayside-test.secure-decoration.com/cpimages_n/29013706 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 5 | 29013671 | https://bayside-test.secure-decoration.com/shop/product/29013671 | https://bayside-test.secure-decoration.com/cpimages_n/29013671 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 6 | 29013711 | https://bayside-test.secure-decoration.com/shop/product/29013711 | https://bayside-test.secure-decoration.com/cpimages_n/29013711 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 7 | 29013721 | https://bayside-test.secure-decoration.com/shop/product/29013721 | https://bayside-test.secure-decoration.com/cpimages_n/29013721 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 8 | 29013716 | https://bayside-test.secure-decoration.com/shop/product/29013716 | https://bayside-test.secure-decoration.com/cpimages_n/29013716 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 9 | 29013676 | https://bayside-test.secure-decoration.com/shop/product/29013676 | https://bayside-test.secure-decoration.com/cpimages_n/29013676 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 10 | 29013701 | https://bayside-test.secure-decoration.com/shop/product/29013701 | https://bayside-test.secure-decoration.com/cpimages_n/29013701 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 11 | 29013681 | https://bayside-test.secure-decoration.com/shop/product/29013681 | https://bayside-test.secure-decoration.com/cpimages_n/29013681 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 12 | 29013661 | https://bayside-test.secure-decoration.com/shop/product/29013661 | https://bayside-test.secure-decoration.com/cpimages_n/29013661 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 13 | 29013686 | https://bayside-test.secure-decoration.com/shop/product/29013686 | https://bayside-test.secure-decoration.com/cpimages_n/29013686 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 14 | 29013691 | https://bayside-test.secure-decoration.com/shop/product/29013691 | https://bayside-test.secure-decoration.com/cpimages_n/29013691 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 15 | 29013801 | https://bayside-test.secure-decoration.com/shop/product/29013801 | https://bayside-test.secure-decoration.com/cpimages_n/29013801 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 16 | 29013806 | https://bayside-test.secure-decoration.com/shop/product/29013806 | https://bayside-test.secure-decoration.com/cpimages_n/29013806 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 18 | 29013786 | https://bayside-test.secure-decoration.com/shop/product/29013786 | https://bayside-test.secure-decoration.com/cpimages_n/29013786 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 19 | 29013816 | https://bayside-test.secure-decoration.com/shop/product/29013816 | https://bayside-test.secure-decoration.com/cpimages_n/29013816 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 20 | 29013791 | https://bayside-test.secure-decoration.com/shop/product/29013791 | https://bayside-test.secure-decoration.com/cpimages_n/29013791 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 21 | 29013811 | https://bayside-test.secure-decoration.com/shop/product/29013811 | https://bayside-test.secure-decoration.com/cpimages_n/29013811 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 22 | 29013796 | https://bayside-test.secure-decoration.com/shop/product/29013796 | https://bayside-test.secure-decoration.com/cpimages_n/29013796 | Loaded 2026-10-17, navy only, retail = FC wholesale |
+| 17 | — | — | — | Not loaded: Sport-Tek fan jersey needs style confirmation |
